@@ -1,0 +1,118 @@
+// @use '@angular/material' as mat;
+// @include mat.core();
+
+
+
+// $pmando-app-ligth-primary: mat.define-palette(mat.$orange-palette, 600);
+// // $pmando-app-ligth-primary: mat-palette($mat-orange, 600);
+
+// $pmando-app-ligth-accent: mat.define-palette(mat.$blue-palette, 800);
+// // $pmando-app-ligth-accent: mat-palette($mat-blue, 800);
+
+// $pmando-app-ligth-warn: mat.define-palette(mat.$red-palette, 500);
+// // $pmando-app-ligth-warn: mat-palette($mat-red, 500);
+
+
+
+
+// $pmando-app-dark-primary: mat.define-palette(mat.$green-palette, A200);
+// // $pmando-app-dark-primary: mat-palette($mat-green, A200);
+
+// $pmando-app-dark-accent: mat.define-palette(mat.$purple-palette, A700);
+// // $pmando-app-dark-accent: mat-palette($mat-purple, A700);
+
+// $pmando-app-dark-warn: mat.define-palette(mat.$red-palette, A400);
+// // $pmando-app-dark-warn: mat-palette($mat-red, A400);
+
+// $pmando-app-ligth-theme: mat.define-light-theme((
+//     color: (
+//       primary: $pmando-app-ligth-primary,
+//       accent: $pmando-app-ligth-accent,
+//       warn: $pmando-app-ligth-warn,
+//     ),
+//     density: 0,
+//    ));
+// // $pmando-app-ligth-theme: mat-ligth-theme($pmando-app-ligth-primary,$pmando-app-ligth-accent,$pmando-app-ligth-warn);
+
+
+// $pmando-app-dark-theme: mat.define-dark-theme((
+//     color: (
+//       primary: $pmando-app-dark-primary,
+//       accent: $pmando-app-dark-accent,
+//       warn: $pmando-app-dark-warn,
+//     ),
+//     density: 0,
+//    ));
+// // $pmando-app-dark-theme: mat-ligth-theme($pmando-app-dark-primary,$pmando-app-dark-accent,$pmando-app-dark-warn);
+
+
+// @include mat.all-component-themes($pmando-app-ligth-theme);
+// // @include angular-material-theme($pmando-app-ligth-theme);
+
+
+
+// .ligth-theme {
+//   @include mat.all-component-colors($pmando-app-ligth-theme);
+//   //@include mat.all-component-themes($pmando-app-ligth-theme);
+//   background: #fff;
+//   color: #222;
+//  }
+// // .light-theme{
+// //   @include angular-material-theme($pmando-app-ligth-theme);
+// //   background: #fff;
+// //   color: #222;
+// // }
+
+// .dark-theme{
+//   @include mat.all-component-colors($pmando-app-dark-theme);
+//   //@include mat.all-component-themes($pmando-app-dark-theme);
+//   background: #222;
+//   color: #fff;
+// }
+
+// // .dark-theme{
+// //   @include angular-material-theme($pmando-app-dark-theme);
+// //   background: #222;
+// //   color: #fff;
+// // }
+
+
+
+
+
+
+
+
+
+
+// // section {
+// //   display: table;
+// // }
+
+// // .example-label {
+// //   display: table-cell;
+// //   font-size: 14px;
+// //   margin-left: 8px;
+// //   min-width: 120px;
+// // }
+
+// // .example-button-row {
+// //   display: table-cell;
+// //   max-width: 600px;
+// // }
+
+// // .example-button-row .mat-mdc-button-base {
+// //   margin: 8px 8px 8px 0;
+// // }
+
+// // .example-flex-container {
+// //   display: flex;
+// //   justify-content: space-between;
+// //   flex-wrap: wrap;
+// // }
+
+// // .example-button-container {
+// //   display: flex;
+// //   justify-content: center;
+// //   width: 120px;
+// // }
