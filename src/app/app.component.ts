@@ -34,7 +34,7 @@ export class AppComponent {
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
-
+  e = "ligth-theme";
 
 
 
@@ -43,9 +43,15 @@ export class AppComponent {
   @HostBinding('class')componentCssClass: any;
 
   constructor(public overlayContainer: OverlayContainer){}
-  public onSetTheme(e:string){
-    this.overlayContainer.getContainerElement().classList.add(e);
-    this.componentCssClass = e;
+  public onSetTheme(){
+    if(this.e=="ligth-theme"){
+      this.e="dark-theme"
+    }
+    else {
+      this.e="ligth-theme"
+    }
+    this.overlayContainer.getContainerElement().classList.add(this.e);
+    this.componentCssClass = this.e;
   }
 
 }

@@ -4,88 +4,56 @@
    <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>My App</span>
+  <!-- <span>My App</span> -->
 
   <span class="example-spacer"></span>
 
   <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
   </button> -->
-  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-   <mat-icon>share</mat-icon>
- </button> -->
+  <button (click)="onSetTheme()"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+   <mat-icon>format_color_fill</mat-icon>
+ </button>
 
 </mat-toolbar>
 
 
-  <mat-drawer-container class="example-container" [hasBackdrop]="hasBackdrop.value">
-    <mat-drawer #drawer [mode]="mode.value">
-      I'm a drawer sfsdfsd daafsasfas
+  <mat-drawer-container class="example-container" [hasBackdrop]="false">
+    <mat-drawer #drawer mode="side">
+      <mat-list>
+        <mat-list-item>Item 1</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Item 2</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Item 3</mat-list-item>
+      </mat-list>
     </mat-drawer>
     <mat-drawer-content>
-<!--
-      <p>
-        <mat-toolbar color="primary">
-          <mat-toolbar-row>
-            <span>My App</span>
-            <span class="example-spacer"></span>
-            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-              <mat-icon>menu</mat-icon>
-            </button>
-          </mat-toolbar-row>
 
-          <mat-toolbar-row>
-            <span>Second Line</span>
-            <span class="example-spacer"></span>
-            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-              <mat-icon>favorite</mat-icon>
-            </button>
-            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-              <mat-icon>share</mat-icon>
-            </button>
-          </mat-toolbar-row>
-        </mat-toolbar>
-      </p> -->
-
-
-
-
-
-
-
-
-      <mat-form-field appearance="fill">
+      <!-- <mat-form-field appearance="fill">
         <mat-label>Sidenav mode</mat-label>
         <mat-select #mode value="side">
           <mat-option value="side">Side</mat-option>
           <mat-option value="over">Over</mat-option>
           <mat-option value="push">Push</mat-option>
         </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="fill">
+      </mat-form-field> -->
+      <!-- <mat-form-field appearance="fill">
         <mat-label>Has backdrop</mat-label>
         <mat-select #hasBackdrop>
           <mat-option>Unset</mat-option>
           <mat-option [value]="true">True</mat-option>
           <mat-option [value]="false">False</mat-option>
         </mat-select>
-      </mat-form-field>
+      </mat-form-field> -->
       <!-- <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button> -->
-
+<!--
   <div class="example-button-row">
-    <button mat-raised-button (click)="onSetTheme('dark-theme')">Dark Theme</button>
-    <button mat-raised-button (click)="onSetTheme('ligth-theme')">Ligth Theme</button>
+    <button mat-raised-button (click)="onSetTheme()">Dark Theme</button>
+    <button mat-raised-button (click)="onSetTheme()">Ligth Theme</button>
 
-  </div>
+  </div> -->
     </mat-drawer-content>
-
-
-
-
-
-
-
-
   </mat-drawer-container>
 
 
